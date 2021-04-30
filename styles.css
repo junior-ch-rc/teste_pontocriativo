@@ -1,0 +1,200 @@
+:root {
+    --bg-color-1: #E7EAEF;
+    --bg-color-2: #ffffff;
+
+    --text-color-1: #142032;
+    --btn-color-1: #3BACFF;
+
+    --font-black: 800;
+    --font-medium: 500;
+    --font-light: 300;
+    --font-book: 400;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("assets/fonts/gotham.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham";
+    color: var(--text-color-1);
+}
+
+body {
+    background-color: var(--bg-color-1);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    width: 100vw;
+    display: flex;
+}
+
+.nav-header {
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 60px;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.nav-options {
+    margin-left: 20vw;
+    padding-left: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-nav {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    background-color: var(--bg-color-1);
+    border-radius: 5px 5px 0 0;
+    width: 137px;
+    height: 50px;
+}
+
+.btn-nav a {
+    font-size: 14px;
+    color: var(--text-color-1);
+}
+
+.btn-nav:hover {
+    background-color: var(--bg-color-2);
+}
+
+span {
+    font-weight: var(--font-black);
+}
+
+.nav-accessibility {
+    display: flex;
+    margin-right: 74px;
+    align-items: center;
+}
+
+.nav-accessibility p{
+    font-size: 10px;
+    font-weight: var(--font-book);
+}
+
+.nav-accessibility i{
+    margin: 20px;
+}
+
+.btn-accessibility {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: var(--font-book);
+    background-color: var(--bg-color-2);
+    border-radius: 3px;
+}
+
+.btn-accessibility:last-child {
+    margin-right: 20px;
+}
+
+.nav-accessibility img {
+    width: 100%;
+}
+
+.nav-accessibility i {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.nav-toYou {
+    height: 115px;
+    background-color: var(--bg-color-2);
+}
+
+.brand {
+    margin-left: 74px;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+
+.brand h1 {
+    font-size: 45px;
+    font-weight: var(--font-light);
+}
+
+.links {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list li {
+    margin-right: 40px;
+}
+
+.list a {
+    font-size: 14px;
+    font-weight: var(--font-black);
+}
+
+.student {
+    width: 50vw;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.student-options {
+    margin-right: 64px;
+}
+
+.btn-primary {
+    background-color: var(--btn-color-1);
+    color: var(--bg-color-2);
+    font-size: 14px;
+    font-weight: var(--font-black);
+    border-radius: 5px;
+    padding: 13px 34px;
+}
+
+.btn-dropdown {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 40px;
+    background-color: var(--bg-color-2);
+    font-size: 14px;
+    font-weight: var(--font-black);
+}
+
+.btn-dropdown img {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+}
+
+.dropdown {
+    position: absolute;
+    visibility: hidden;
+}
