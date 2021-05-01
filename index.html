@@ -49,47 +49,76 @@
             </div>
             <div class="student">
                 <div class="student-options">
-                    <button class="btn btn-primary">Inscreva-se</button>
-                    <button class="btn btn-dropdown">Portal do Aluno<img src="assets/icons/expand_more.svg" alt="ver-mais"></button>
+                    <button type="button" class="btn btn-primary">Inscreva-se</button>
+                    <button type="button" class="btn btn-dropdown" id="btnDropdown">Portal do Aluno<img src="assets/icons/expand_more.svg" alt="ver-mais"></button>
                 </div>  
-                <div class="dropdown">
+                <div class="dropdown" id="dropdown">
                     <div class="dropdown-links">
                         <ul>
                             <li>
-                                <i></i>Meus Cursos
+                                <a href="#">
+                                    <img src="assets/icons/chevron_right.svg" alt="seta-direita">
+                                    Meus Cursos
+                                </a>
                             </li>
                             <li>
-                                <i></i>Impressão de 2a. Via
+                                <a href="#">
+                                    <img src="assets/icons/chevron_right.svg" alt="seta-direita">
+                                    Impressão de 2a. Via
+                                </a>
                             </li>
                             <li>
-                                <i></i>Débito automático
+                                <a href="#">
+                                    <img src="assets/icons/chevron_right.svg" alt="seta-direita">
+                                    Débito automático
+                                </a>
                             </li>
                             <li>
-                                <i></i>Mudança de vencimento
+                                <a href="#">
+                                    <img src="assets/icons/chevron_right.svg" alt="seta-direita">
+                                    Mudança de vencimento
+                                </a>
                             </li>
                             <li>
-                                <i></i>Entenda sua fatura
+                                <a href="#">
+                                    <img src="assets/icons/chevron_right.svg" alt="seta-direita">
+                                    Entenda sua fatura
+                                </a>
                             </li>
                             <li>
-                                <i></i>Fatura por e-mail
+                                <a href="#">
+                                    <img src="assets/icons/chevron_right.svg" alt="seta-direita">
+                                    Fatura por e-mail
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="dropdown-login">
-                        <h3 class="title">Olá!</h3>
-                        <h4 class="subtitle">Bem-vindo ao Portal do Aluno.</h4>
-                        <form class="dropdown-form">
+                        <div class="dropdown-header">
+                            <h3>Olá!</h3>
+                            <h4>Bem-vindo ao Portal do Aluno.</h4>
+                        </div>
+                        <form class="dropdown-form" action="#">
                             <label for="email">E-mail ou CPF</label>
-                            <input type="text">
+                            <input type="text" name="email">
                             <label for="password">Senha</label>
-                            <input type="password">
+                            <input type="password" name="password">
+
+                            <div class="dropdown-footer">
+                                <a href="#">
+                                    <img src="assets/icons/chevron_right.svg" alt="seta-direita">
+                                    Lembrar senha
+                                </a>
+                                <button class="btn btn-primary" type="submit">Entrar</button>
+                            </div>
                         </form>
-                        <a><i></i>Lembrar senha</a>
-                        <button class="btn-primary" type="submit">Entrar</button>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+
+    <script src="script.js"></script>
 </body>
 </html>
